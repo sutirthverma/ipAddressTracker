@@ -1,13 +1,83 @@
-@use 'variables';
-@use 'responsive';
+@use "variables" as *;
+@use "responsive" as *;
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
-    font-family: 'Rubik', sans-serif;
+body {
+    font-family: "Rubik", sans-serif;
 }
 
+main {
+    text-align: center;
+    .ip {
+        background-image: url(/images/pattern-bg.png);
+        background-repeat: no-repeat;
+        background-size: 250vw 18em;
+
+        h1 {
+            color: white;
+            font-weight: 500;
+            padding: 0.7em 0em;
+            font-size: 2em;
+        }
+
+        .ipInput {
+            display: flex;
+            justify-content: center;
+        }
+
+        #ipIn {
+            height: 4em;
+            font-size: 1em;
+            width: 20em;
+            margin-bottom: 1em;
+            margin-right: 0%;
+            outline: none;
+            border: 0;
+            border-radius: 10px 0px 0px 10px;
+            padding: 1em;
+            font-weight: 500;
+        }
+
+        .submit {
+            background-color: black;
+            height: 4.9em;
+            width: 4em;
+            border: 0;
+            padding: 1em;
+            border-radius: 0px 10px 10px 0px;
+            cursor: pointer;
+        }
+
+        .output {
+            background-color: white;
+            width: 90%;
+            margin: auto;
+            border-radius: 10px;
+            padding: 1em;
+
+            > div {
+                margin-bottom: 1em;
+            }
+
+            .outputValue,
+            .outputLabel {
+                padding: 0.2em;
+                font-weight: 700;
+            }
+
+            .outputLabel{
+                color: $darkGray;
+            }
+
+            .outputValue {
+                font-size: 1.5em;
+            }
+        }
+        
+    }
+}

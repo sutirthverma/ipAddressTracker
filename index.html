@@ -19,19 +19,49 @@
 </head>
 
 <body>
+  <main>
+    <section class="ip">
+      <h1>IP Address Tracker</h1>
+      <div class="ipInput">        
+        <input type="text" name="ipIn" id="ipIn" placeholder="Search for any IP address or domain">
+        <button class="submit">
+          <img src="images/icon-arrow.svg" alt="">
+        </button>
+      </div>
 
-  IP Address Tracker
+      <div class="output">
+        <div class="output-address">
+          <label class="addressLabel outputLabel">IP ADDRESS</label>
+          <div class="adress outputValue">192.212.174.101</div>
+        </div>
 
-  Search for any IP address or domain
+        <div class="output-location">
+          <label class="locationLabel outputLabel">LOCATION</label>
+          <div class="location outputValue">Brooklyn, NY 10001</div>
+        </div>
 
-  IP Address
-  Location
-  Timezone
-  UTC
-  <!-- add offset value dynamically using the API -->
-  ISP
+        <div class="output-timezone">
+          <label class="timezoneLabel outputLabel">TIMEZONE</label>
+          <div class="timezone outputValue">UTC -05:00</div>
+        </div>
 
-<script src="app/js/script.js"></script>
+        <div class="output-isp">
+          <label class="ipAddress outputLabel">ISP</label>
+          <div class="isp outputValue">SpaceX Starlink</div>
+        </div>
+
+      </div>
+
+
+    </section>
+    <section class="map"></section>
+  </main>
+
+
+
+  
+
+  <script src="app/js/script.js"></script>
 </body>
 
 </html>
