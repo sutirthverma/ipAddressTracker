@@ -1,9 +1,56 @@
+@use "variables" as *;
+
 //Mobile
-@media (max-width: 688px) {
-    
+@media (max-width: 810px) {
+    main {
+        .ip {
+            #ipIn {
+                width: 70%;
+            }
+        }
+    }
+
+    .output {
+        > div {
+            margin-bottom: 1em;
+        }
+    }
 }
 
 //Desktop
-@media (min-width: 689px) {
-   
+@media (min-width: 811px) {
+    main {
+        .ip {
+            #ipIn {
+                width: 45% ;
+            }
+        }
+    }
+
+    .output {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
+
+        > div {
+            padding: 1em;
+            height: 7em;
+            margin: auto;
+            text-align: left;
+
+            &:not(:first-child) {
+                border-left: 0.1em solid $darkGray;
+            }
+        }
+
+        .outputValue {
+            margin-top: 0.2em;
+        }
+
+        .location,
+        .isp {
+            width: 6em;
+        }
+    }
 }

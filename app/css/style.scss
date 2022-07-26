@@ -9,6 +9,7 @@
 
 body {
     font-family: "Rubik", sans-serif;
+    font-weight: 700;
 }
 
 main {
@@ -28,12 +29,13 @@ main {
         .ipInput {
             display: flex;
             justify-content: center;
+            position: absolute;
+            width: 100%;
         }
 
         #ipIn {
             height: 4em;
             font-size: 1em;
-            width: 20em;
             margin-bottom: 1em;
             margin-right: 0%;
             outline: none;
@@ -55,14 +57,15 @@ main {
 
         .output {
             background-color: white;
-            width: 90%;
+            width: 85%;
             margin: auto;
             border-radius: 10px;
             padding: 1em;
-
-            > div {
-                margin-bottom: 1em;
-            }
+            position: relative;
+            top: 6em;
+            -webkit-box-shadow: 0px 0px 35px -9px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 35px -9px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 35px -9px rgba(0, 0, 0, 0.75);
 
             .outputValue,
             .outputLabel {
@@ -70,14 +73,20 @@ main {
                 font-weight: 700;
             }
 
-            .outputLabel{
+            .outputLabel {
                 color: $darkGray;
+                font-weight: 700;
             }
 
             .outputValue {
                 font-size: 1.5em;
+                font-weight: 500;
             }
         }
-        
+    }
+
+    #map {
+        height: 4em;
+        width: 100%;
     }
 }
